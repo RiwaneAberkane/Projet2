@@ -266,6 +266,40 @@ html,body{
 
     #section-1 section{
         padding: 25px 0;
+    }
+
+    #section-1{
+        padding-bottom: 0;
+    }
+
+    .textec{
+        display: none;
         
+    }
+    #css_case:hover #css_text{
+        display: block;
+    }
+
+    #css_case:hover{
+        width: calc(100vw - 40px);
+        position: absolute;
+    }
+
+    #html_case:hover #html_text{
+        display: block;
+    }
+
+    #html_case:hover{
+        width: calc(100vw - 40px);
+        position: absolute;
+    }
+
+    #java_case:hover #java_text{
+        display: block;
+    }
+
+    #java_case:hover{
+        width: calc(100vw - 40px);
+        position: absolute;
     }
 }
