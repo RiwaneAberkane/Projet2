@@ -72,6 +72,7 @@ main>section{
 img{
     width: 50%;
     height: auto;    
+    object-fit: contain;
 }
 
 
@@ -149,5 +150,122 @@ html{
     scroll-behavior: smooth;
 }
 
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    }
 
+@media(max-width:1200px){
+    main > section{
+        padding: 50px 125px;
+    }
 
+    .gallery div{
+        width: 33%;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .gallery{
+        justify-content: flex-end;
+    }
+
+    .gallery img{
+        width: 100%; 
+    }
+    img{
+        width:100%;
+    }
+    .section-flex div{
+        padding-left: 0;
+        width: 100%;
+    }
+
+    #div{
+        flex-direction: column;
+    }
+
+    #div div {
+        justify-self: center;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:992px){
+    .gallery img{
+        width: 100%;
+    }
+    .input-container div {
+        width:100%;
+    }
+
+    .gallery{
+        justify-content: flex-end;
+    }
+
+    .gallery div{
+        width: 50%;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .gallery{
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width:768px){
+    .gallery img{
+        width: 100%;
+    }
+    main > section{
+        padding: 50px 30px;
+    }
+
+    ul{
+        padding: 0;
+    }
+}
+
+@media(max-width:567px){
+
+    h1{
+        margin-top: 10px;
+        font-size: 50px;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+    .input-container div {
+        width:100%;
+    }
+
+    .gallery{
+        justify-content: flex-end;
+    }
+
+    .gallery div{
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    #contact-div iframe{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #contact-div{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #section-1 section{
+        padding: 25px 0;
+        
+    }
+}
